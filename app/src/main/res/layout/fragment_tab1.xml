@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/data_padding"
+                android:paddingBottom="@dimen/data_padding"
+                android:text="@string/tab1_intro"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <!-- Description Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/label_height"
+                android:padding="@dimen/activity_text_label_padding"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:text="@string/detail_description_label"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border"
+                android:background="@android:color/black" />
+            <TextView
+                android:id="@+id/description_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/data_margin"
+                android:layout_marginTop="@dimen/data_margin"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingTop="@dimen/activity_text_label_padding"
+                android:layout_height="@dimen/label_height"
+                android:background="@color/colorPrimaryDark"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:textColor="@android:color/white"
+                android:text="@string/detail_name_label"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border"
+                android:background="@android:color/black" />
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:paddingTop="@dimen/data_padding"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/data_padding"
+                android:layout_height="@dimen/data_height"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+            <!-- Origin -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/label_height"
+                android:background="@color/colorPrimaryDark"
+                android:paddingTop="@dimen/activity_text_label_padding"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:textColor="@android:color/white"
+                android:text="@string/detail_place_of_origin_label"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border"
+                android:background="@android:color/black" />
+            <TextView
+                android:id="@+id/origin_tv"
+                android:layout_width="wrap_content"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/data_padding"
+                android:paddingBottom="@dimen/data_padding"
+                android:layout_height="@dimen/data_height"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+            <!-- Alt Names -->
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingTop="@dimen/activity_text_label_padding"
+                android:layout_height="@dimen/label_height"
+                android:background="@color/colorPrimaryDark"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:textColor="@android:color/white"
+                android:text="@string/detail_also_known_as_label"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border"
+                android:background="@android:color/black" />
+            <TextView
+                android:id="@+id/also_known_tv"
+                android:layout_width="wrap_content"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/data_padding"
+                android:paddingBottom="@dimen/data_padding"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+</RelativeLayout>

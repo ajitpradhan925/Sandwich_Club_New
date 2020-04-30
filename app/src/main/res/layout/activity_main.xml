@@ -1,0 +1,51 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layout_image"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/holo_red_dark"
+            android:id="@+id/toolbar"
+            />
+        <ImageView
+            android:id="@+id/expandedImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height"
+            android:src="@drawable/sandwich"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a sandwich for details"
+        android:textAllCaps="false"
+        android:layout_alignBottom="@id/layout_image"
+        android:textColor="#fff"
+        android:background="@drawable/corner"
+        android:padding="@dimen/text_head_padding"
+        android:textStyle="bold"
+        />
+    <ListView
+        android:layout_below="@+id/layout_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/sandwich_list" />
+
+</RelativeLayout>
+
+
+
